@@ -17,31 +17,31 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="" class="nav__link">
+              <a href="#flats" class="nav__link">
                 Недвижимость
                 <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">
+              <a href="#form" class="nav__link">
                 Тур за недвижимостью
                 <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
-              <a href="/form" class="nav__link">
+              <a href="#form" class="nav__link">
                 Оформление покупки
                 <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">
+              <a href="#turkish" class="nav__link">
                 Почему Турция
                 <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link">
+              <a href="#" class="nav__link">
                 Контакты
               </a>
             </li>
@@ -80,7 +80,7 @@
     </div>
   </header>
   <main class="content">
-    <section class="flat">
+    <section  id="flats" class="flat">
       <article class="flat__promo">
         <div class="flat__info">
           <div class="flat__block">
@@ -107,13 +107,13 @@
         </div>
       </article>
     </section>
-    <section class="form">
+    <section id="form" class="form">
       <article class="form__block">
         <h2 class="form__heading">
           Оставьте заявку на тур за недвижимостью
         </h2>
-        <label for="" class="form__toggler">
-          <input type="checkbox" class="form__checkbox">
+        <label for="1" class="form__toggler">
+          <input id="1" type="checkbox" class="form__checkbox">
         </label>
         <form action="" class="form__wrapper">
           <input
@@ -128,6 +128,12 @@
             placeholder="Телефон"
             required
           >
+          <input
+          type="email"
+          class="form__input form__input-email"
+          placeholder="Email"
+          required
+        >
           <button
             type="submit"
             class="form__submit button"
@@ -143,7 +149,7 @@
         </form>
       </article>
     </section>
-    <section class="advantage">
+    <section id="turkish" class="advantage">
       <div class="advantage__wrapper">
         <h2 class="advantage__heading">
           Почему Турция
@@ -204,6 +210,7 @@
       </div>
     </section>
   </main>
+  <div class="overlay"></div>
   <script src='./scripts/main.js'></script>
 </body>
 

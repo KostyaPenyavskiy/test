@@ -145,6 +145,10 @@
     color: #3d4e74;
     margin-bottom: 35px;
 
+    &-email {
+      display: none;
+    }
+    
     &::placeholder {
       opacity: 0.79;
     }

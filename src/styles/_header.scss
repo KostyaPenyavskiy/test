@@ -147,7 +147,15 @@
     font-weight: 500;
   }
 
-  &__back,
+  &__back {
+    display: inline-block;
+    text-align: center;
+    font-family: "Museo light";
+    font-weight: 300;
+    height: 49px;
+    line-height: 49px;
+  }
+
   &__article {
     display: inline-block;
     text-align: center;
