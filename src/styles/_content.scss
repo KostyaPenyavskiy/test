@@ -31,7 +31,7 @@
     box-sizing: border-box;
     width: 268px;
     height: 176px;
-    background-color: #9d9ea1;
+    background-color: #3d4e74;
     opacity: 0.9;
 
     & p + p {
@@ -176,6 +176,7 @@
 
     & a {
       text-decoration: underline;
+      color: black;
     }
   }
 }

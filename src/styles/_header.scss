@@ -147,15 +147,6 @@
     font-weight: 500;
   }
 
-  &__back {
-    display: inline-block;
-    text-align: center;
-    font-family: "Museo light";
-    font-weight: 300;
-    height: 49px;
-    line-height: 49px;
-  }
-
   &__article {
     display: inline-block;
     text-align: center;
@@ -165,19 +156,23 @@
     line-height: 49px;
   }
 
-  &__back {
-    width: 238px;
-    margin-top: 67px;
-    margin-bottom: 69px;
-    background-color: white;
-    color: #333946;
-  }
-
   &__article {
-    position: static;
     width: 484px;
     background-color: #3d4e74;;
     color: white;
   }
 }
 
+#form-report__back {
+  display: inline-block;
+  text-align: center;
+  font-family: "Museo light";
+  font-weight: 300;
+  height: 49px;
+  line-height: 49px;
+  width: 238px;
+  margin-top: 67px;
+  margin-bottom: 69px;
+  background-color: white;
+  color: #333946;
+}
