@@ -1,1 +1,1 @@
-(PREVIEW)[https://kostyapenyavskiy.github.io/test/]
+[PREVIEW](https://kostyapenyavskiy.github.io/test/)
