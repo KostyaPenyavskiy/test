@@ -4,3 +4,10 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin background-img_options($args...) {
+  background-image: $args;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

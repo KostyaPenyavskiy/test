@@ -1,0 +1,246 @@
+.content {
+  margin: 0 auto;
+}
+
+.flat {
+  margin-top: 76px;
+
+  &__promo {
+    width: 571px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__info {
+    position: relative;
+    color: white;
+    width: 571px;
+    height: 393px;
+    @include background-img_options(url('../images/main/flat-banner.png'));
+  }
+
+  &__block {
+    position: absolute;
+    font-family: "Museo light";
+    font-size: 14;
+    font-weight: 300;
+    padding-left: 54px;
+    padding-top: 25px;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    width: 268px;
+    height: 176px;
+    background-color: #3d4e74;
+    opacity: 91%;
+
+    & p + p {
+      margin-top: 15px;
+    }
+  }
+
+  &__name {
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    margin-bottom: 0;
+    max-width: 300px;
+    font-family: "Museo regular";
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &__price {
+    margin-top: 28px;
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-end;
+
+    &-sum {
+      font-family: "Museo regular";
+      font-weight: 500;
+      font-size: 30px;
+      margin-right: 40px;
+    }
+
+    &-more {
+      width: 196px;
+      height: 46px;
+    }
+
+    &-arrow {
+      display: inline-block;
+      float: right;
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      background-color: #3761c2;
+    }
+  }
+
+  &-geo::before,
+  &-metrics::before,
+  &-rooms::before,
+  &-installment::before {
+    content: '';
+    position: absolute;
+    left: 31px;
+    width: 13px;
+    height: 18px;
+  }
+
+  &-geo::before {
+    @include background-img_options(url('../images/main/Shape.svg'));
+    background-size: contain;
+  }
+
+  &-metrics::before {
+    @include background-img_options(url('../images/main/size.svg'));
+    background-size: contain;
+  }
+
+  &-rooms::before {
+    @include background-img_options(url('../images/main/bed.svg'));
+    background-size: contain;
+  }
+
+  &-installment::before {
+    @include background-img_options(url('../images/main/pie-chart.svg'));
+    background-size: contain;
+  }
+}
+
+.form {
+  position: relative;
+  z-index: 2;
+  top: 140px;
+  background-color: white;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 60px rgba(27, 88, 226, 0.33);
+  }
+
+  &__heading {
+    color: #3d4e74;
+    font-family: "Museo regular";
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &__input {
+    width: 303px;
+    margin-right: 17px;
+    box-sizing: border-box;
+    height: 49px;
+    padding: 5px 20px;
+    font-family: "Museo light";
+    font-size: 16;
+    font-weight: 300;
+    color: #3d4e74;
+    margin-bottom: 35px;
+
+    &::placeholder {
+      opacity: 0.79;
+    }
+  }
+
+  &__submit {
+    width: 238px;
+    height: 49px;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__toggler {
+    @include background-img_options(url('../images/main/right-arrow.svg'));
+    width: 30px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__privacy-wrapper {
+    text-align: center;
+    margin-bottom: 35px;
+
+    & a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.advantage {
+  padding-top: 235px;
+  position: relative;
+  @include background-img_options(url('../images/main/turkish-bg.png'));
+  height: 1028px;
+
+  &__wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    position: relative;
+    font-family: "Museo regular";
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 50px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      width: 50px;
+      height: 12px;
+      background-color: #4977e0;
+    }
+  }
+
+  &__blocks-wrapper {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__block {
+    background-color: white;
+    color: #25272a;
+    box-sizing: border-box;
+    padding: 70px 10px 5px;
+    width: 292px;
+    height: 292px;
+    text-align: center;
+    font-family: "Museo light";
+    font-size: 20;
+    font-weight: 300;
+
+    &-img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    &-info {
+      display: inline-block;
+      margin-top: 25px;
+      width: 245px;
+
+      & span {
+        color: #686b6f;
+        font-size: 16px;
+      }
+    }
+
+    &-blue {
+      color: white;
+      background-color: #4977e0;
+    }
+  }
+}
