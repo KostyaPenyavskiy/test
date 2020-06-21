@@ -19,25 +19,21 @@
             <li class="nav__item">
               <a href="#flats" class="nav__link">
                 Недвижимость
-                <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#form" class="nav__link">
                 Тур за недвижимостью
-                <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#form" class="nav__link">
                 Оформление покупки
-                <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
               <a href="#turkish" class="nav__link">
                 Почему Турция
-                <span class="nav__link-pipe">|</span>
               </a>
             </li>
             <li class="nav__item">
@@ -63,7 +59,40 @@
           </div>
         </div>
       </div>
+      <label for="burger-menu" class="header__burger-menu-toggler">
+        <div class="header__burger-menu-block"></div>
+        <input id="burger-menu" type="checkbox" class="header__burger-menu">
+      </label>
     </div>
+    <nav class="header__mob-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#flats" class="nav__link">
+            Недвижимость
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#form" class="nav__link">
+            Тур за недвижимостью
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#form" class="nav__link">
+            Оформление покупки
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#turkish" class="nav__link">
+            Почему Турция
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="header__promo">
       <h1 class="header__heading">
         Недвижимость алании
@@ -100,14 +129,9 @@
           </span>
           <button class="flat__price-more button" type="button" style="display: inline-block;">
             Подробнее
-            <div class="flat__price-arrow">
-              >
-            </div>
           </button>
         </div>
       </article>
-    </section>
-    <section id="form" class="form">
       <article class="form__block">
         <h2 class="form__heading">
           Оставьте заявку на тур за недвижимостью
@@ -119,21 +143,17 @@
           <input
             type="text"
             class="form__input"
+            name="name"
             placeholder="Ваше имя"
             required
           >
           <input
             type="tel"
             class="form__input"
+            name="phone"
             placeholder="Телефон"
             required
           >
-          <input
-          type="email"
-          class="form__input form__input-email"
-          placeholder="Email"
-          required
-        >
           <button
             type="submit"
             class="form__submit button"
@@ -141,7 +161,9 @@
             <a href="./form.html">Оставить заявку</a>
           </button>
           <div class="form__privacy-wrapper">
-            <input id="privacy" type="checkbox" class="form__privacy" checked required>
+            <input id="privacy" type="checkbox" 
+            name="privacy"
+            class="form__privacy" checked required>
             <label for="privacy">
               Я соглашаюсь с <a href="#">политикой конфиденциальности</a>
             </label>
@@ -155,7 +177,8 @@
           Почему Турция
         </h2>
         <div class="advantage__blocks-wrapper">
-          <div class="advantage__block advantage__block-blue">
+          <div class="advantage__block advantage__block-blue
+          advantage__block-blue-1">
             <img src="./images/main/1.svg" alt="img" class="advantage__block-img">
             <p class="advantage__block-info">
               Великолепный<br>
@@ -168,7 +191,8 @@
               Паспортная программа для иностранцев
             </p>
           </div>
-          <div class="advantage__block advantage__block-blue">
+          <div class="advantage__block advantage__block-blue
+          advantage__block-blue-2">
             <img src="./images/main/3.svg" alt="img" class="advantage__block-img">
             <p class="advantage__block-info">
               Легкость получения ВНЖ
@@ -188,7 +212,7 @@
                 из любого крупного города)</span>
             </p>
           </div>
-          <div class="advantage__block advantage__block-blue">
+          <div class="advantage__block advantage__block-blue advantage__block-blue-3">
             <img src="./images/main/6.svg" alt="img" class="advantage__block-img">
             <p class="advantage__block-info">
               Отсутствие виз для граждан СНГ
@@ -200,7 +224,7 @@
               Качественное образование для Ваших детей
             </p>
           </div>
-          <div class="advantage__block advantage__block-blue">
+          <div class="advantage__block advantage__block-blue advantage__block-blue-4">
             <img src="./images/main/8.svg" alt="img" class="advantage__block-img">
             <p class="advantage__block-info">
               Низкие налоги
@@ -211,6 +235,53 @@
     </section>
   </main>
   <div class="overlay"></div>
+  <article class="modal-form-wrapper">
+    <article class="form__block modal-form">
+      <h2 class="form__heading modal-form__heading">
+        Оставьте заявку на тур за недвижимостью
+      </h2>
+      <label for="1" class="form__toggler">
+        <input id="1" type="checkbox" class="form__checkbox">
+      </label>
+      <form action="" class="form__wrapper">
+        <input
+          type="text"
+          class="form__input modal-form__input"
+          name="name"
+          placeholder="Ваше имя"
+          required
+        >
+        <input
+          type="tel"
+          class="form__input modal-form__input"
+          name="phone"
+          placeholder="Телефон"
+          required
+        >
+        <input
+        type="email"
+        class="form__input modal-form__input"
+        name="email"
+        placeholder="Email"
+        required
+      >
+        <button
+          type="submit"
+          class="form__submit button modal-form__submit"
+        >
+          <a href="./form.html">Оставить заявку</a>
+        </button>
+        <div class="form__privacy-wrapper">
+          <input id="privacy" type="checkbox" 
+          name="privacy"
+          class="form__privacy" checked required>
+          <label for="privacy">
+            Я соглашаюсь с <a href="#">политикой конфиденциальности</a>
+          </label>
+        </div>
+      </form>
+    </article>
+  </article>
   <script src='./scripts/main.js'></script>
 </body>
 

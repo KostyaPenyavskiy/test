@@ -1,58 +1,29 @@
 'use strict';
-const formSubmit = document.querySelector(".form__wrapper");
-const formToggler = document.querySelector(".form__toggler");
-const overlay = document.querySelector(".overlay");
-const form = document.querySelector(".form__wrapper");
-const formSection = document.querySelector(".form");
-const formHeading = document.querySelector(".form__heading");
-const formInputEmail = document.querySelector(".form__input-email");
-const formInput = Array.from(document.querySelectorAll(".form__input"));
-const formSubmitButton = document.querySelector(".form__submit");
+const burgerMenuToggler  = document.querySelector(".header__burger-menu-toggler");
+const mobileMenu         = document.querySelector(".header__mob-menu");
+const togglerBlock       = document.querySelector(".header__burger-menu-block");
+const formToggler        = document.querySelector(".form__toggler");
+const overlay            = document.querySelector(".overlay");
+const modalForm          = document.querySelector(".modal-form-wrapper");
+const formWrapper        = document.querySelectorAll(".form__wrapper")[1];
 
-formSubmit.addEventListener('submit', (event) => {
-  event.preventDefault();
+burgerMenuToggler.addEventListener('change', (e) => {
+
+  mobileMenu.classList
+    .toggle("visible-menu");
+
+  togglerBlock.classList
+    .toggle("toggler-blocks-toggled");
+
 });
 
-formToggler.addEventListener('change', (event) => {
-  if (event.target.checked) {
-    overlay.style.cssText = `
-      display: block;
-      transition: 0.5s;
-    `;
-    form.style.cssText = `
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    `;
-    formSection.style.cssText = `
-      width: 516px;
-    `;
-    formHeading.style.cssText = `
-    text-align: center;
-    width: 347px;
-    font-size: 26px;
-  `;
-    formSubmitButton.style.cssText = `
-      width: 398px;
-      margin-bottom: 20px;
-    `;
-    formInput.forEach(input => {
-      input.style.cssText = `
-      display: block;
-      width: 398px;
-    `
-    });
-  }
+formToggler.addEventListener('change', (e) => {
 
-  if (!event.target.checked) {
-    overlay.style.cssText = "";
-    form.style.cssText = "";
-    formSection.style.cssText = "";
-    formHeading.style.cssText = "";
-    formInputEmail.style.display = "none";
-    formSubmit.style.cssText = "";
-    formInput.forEach(input => {
-      input.style.cssText = ""
-    });
+  if(e.target.checked) {
+    modalForm.classList.add("modal-form-wrapper-visible");
+    formWrapper.classList.add("form__wrapper-modal-style");
+  } else {
+    modalForm.classList.remove("modal-form-wrapper-visible");
+    formWrapper.classList.remove("form__wrapper-modal-style");
   }
 });

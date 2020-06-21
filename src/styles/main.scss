@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
-  font-family: "Museo light";
+  font-family: "Museo light" Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
 
@@ -35,18 +39,6 @@ a:visited {
   line-height: 46px;
   background-color:#4977e0;
   border: none;
-}
-
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: #242b3b;
-  opacity: 0.8;
-  transition: 0.5s;
 }
 
 @import "utils";
